@@ -4,9 +4,9 @@ const popup = document.querySelector('.module');
 popup.classList.add('module-close');
 
 buttonOpen.addEventListener('click', function(evt) {
- evt.preventDefault();
- popup.classList.toggle('module-close');
- popup.classList.toggle('module-show');
+  evt.preventDefault();
+  popup.classList.toggle('module-close');
+  popup.classList.toggle('module-show');
 });
 
 window.addEventListener('keydown', function (evt){
