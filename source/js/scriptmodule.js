@@ -1,4 +1,4 @@
-const buttonOpen = document.querySelector('.question__search');
+/*const buttonOpen = document.querySelector('.question__search');
 const popup = document.querySelector('.module');
 
 popup.classList.add('module-close');
@@ -18,3 +18,4 @@ window.addEventListener('keydown', function (evt){
     }
   }
 });
+*/

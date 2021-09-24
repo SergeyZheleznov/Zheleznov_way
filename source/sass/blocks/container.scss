@@ -1,18 +1,26 @@
-.container {
-  min-width: 320px;
-  margin: 0 auto;
-  background-color: $white;
-}
-
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .container {
-    min-width: 768px;
+    width: 1920px;
+    margin: 0;
+    padding: 0 375px;
+    background-color: $light-grey;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .container {
-    min-width: 1024px;
-    margin: 0 auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    width: auto;
+    margin: 0;
+    padding: 0 5.6%;
+    background-color: green;
   }
 }

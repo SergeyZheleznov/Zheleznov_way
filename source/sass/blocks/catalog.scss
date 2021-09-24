@@ -1,0 +1,158 @@
+.catalog__wrap-text {
+  padding-top: 200px;
+  outline: 1px solid rgb(0, 255, 34);
+}
+
+.catalog__text1 {
+  width: 358px;
+  height: 160px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 64px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 55px;
+  line-height: 80px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: -1.25px;
+  color: $type-dark;
+  fill: solid;
+  outline: 1px solid red;
+}
+
+.catalog__text2 {
+  width: 328px;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: -0.47px;
+  color: rgba(44, 46, 63, 0.7);
+  fill: solid;
+  outline: 1px solid red;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.catalog__item-greece {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  margin-right: 60px;
+  padding: 0;
+  width: 350px;
+  height: 430px;
+
+  background-color: $white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/greece.png");
+}
+
+.catalog__item-state {
+  width: 215px;
+  height: 61px;
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: -0.47px;
+  color: $type-dark;
+  fill: solid;
+  background-color: $white;
+  outline: 1px solid red;
+}
+
+.catalog__item-albany {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  margin-right: 60px;
+  width: 350px;
+  height: 430px;
+
+  background-color: $white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/albany.png");
+}
+
+.catalog__item-macedonia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  height: 430px;
+
+  background-color: $white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/macedonia.png");
+}
+
+.catalog__item-montenegro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+  margin-left: 125px;
+  width: 350px;
+  height: 430px;
+
+  background-color: $white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/montenegro.png");
+}
+
+.catalog__item-croatia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  margin-top: 100px;
+  margin-left: 120px;
+  padding: 0;
+  width: 350px;
+  height: 430px;
+
+  background-color: $white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/croatia.png");
+}

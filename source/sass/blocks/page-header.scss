@@ -1,19 +1,26 @@
-.page-header {
-  width: auto;
-  height: 563px;
-  background-color: red;
-}
-
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .page-header {
-    height: 394px;
-    background-color: rgb(51, 255, 0);
+    width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: red;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-header {
-    height: 860px;
-    background-color: rgb(25, 0, 255);
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: green;
   }
 }

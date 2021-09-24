@@ -1,0 +1,15 @@
+.page-body {
+  min-width: $mobile-width;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+}
+
+@media (min-width: $desktop-width) {
+  .page-body {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: $white;
+  }
+}
