@@ -16,17 +16,21 @@ img {
   overflow: hidden;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
   min-width: 320px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #000000;
+  color: $type-dark;
   background-color: #ffffff;
 }

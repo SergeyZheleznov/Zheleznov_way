@@ -13,3 +13,12 @@
     background-color: $white;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .page-body {
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    background-color: $white;
+  }
+}

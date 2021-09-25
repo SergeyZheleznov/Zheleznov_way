@@ -9,7 +9,9 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-header {
+    box-sizing: border-box;
     width: auto;
+    height: auto;
     margin: 0;
     padding: 0;
     background-color: yellow;

@@ -1,0 +1,134 @@
+@media (min-width: $desktop-width) {
+  .price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 233px;
+    margin-bottom: 140px;
+  }
+
+  .price__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 370px;
+    height: 672px;
+    padding: 40px 30px 30px;
+    border: 3px solid rgba(44, 46, 63, 0.3);
+    border-radius: 6px;
+  }
+
+  .price__card-pick {
+    margin-right: 30px;
+    border: 3px solid $pink;
+  }
+
+  .price__title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 310px;
+  }
+
+  .price__name {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: left;
+    color: $pink;
+  }
+
+  .price__digit {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: left;
+    color: $pink;
+  }
+
+  .price__special {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 370px;
+    height: 672px;
+    margin-left: 30px;
+    padding: 120px 30px 30px;
+    outline: 1px solid red;
+  }
+
+  .price__instruction {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #2c2e3f;
+  }
+
+  .price__features-list {
+    list-style: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .price__button {
+    width: 310px;
+    height: 75px;
+    background-color: $pink;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $white;
+    border: none;
+  }
+
+  .price__special-title {
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+    text-align: left;
+  }
+
+  .price__special-text {
+    width: 306px;
+    height: 190px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: $type-dark-70;
+  }
+
+  .price__invitation {
+    padding-left: 50px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: left;
+    color: $dark;
+  }
+
+  .price__tel {
+    margin: 0;
+    padding-left: 50px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: $black;
+  }
+}
