@@ -3,17 +3,17 @@
     width: 1920px;
     margin: 0;
     padding: 0 375px;
-    background-color: $white;
-    outline: 1px solid red;
+    background-color: $light-grey;
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .container {
+    position: relative;
     width: auto;
     margin: 0;
     padding: 0;
-    background-color: yellow;
+    background-color: $light-grey;
   }
 }
 
@@ -22,6 +22,6 @@
     width: auto;
     margin: 0;
     padding: 0 5.6%;
-    background-color: green;
+    background-color: $light-grey;
   }
 }

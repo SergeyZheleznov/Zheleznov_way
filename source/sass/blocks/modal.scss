@@ -1,0 +1,163 @@
+@media (min-width: $desktop-width) {
+  .modal {
+    position: absolute;
+    top: 4403px;
+    left: 904px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 656px;
+    height: 315px;
+    padding: 50px 50px 40px;
+    background-color: $white;
+    box-shadow: 0.01px 4px 30px 0.01px #2936421a;
+  }
+
+  .modal__text {
+    margin: 0;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .modal__recomendation {
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: $dark;
+  }
+
+  .modal__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 556px;
+  }
+
+  .modal__tel {
+    width: 270px;
+    height: 50px;
+    border: 1px solid #2c2e3f4d;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .modal__email {
+    width: 270px;
+    height: 50px;
+    border: 1px solid #2c2e3f4d;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .modal__button {
+    width: 176px;
+    height: 50px;
+    background-color: $pink;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $white;
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .modal {
+    position: absolute;
+    top: 490vw;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 85.68vw;
+    height: 40.49vw;
+    padding: 6.5vw 6.5vw;
+    background-color: $white;
+    box-shadow: 0.001vw 0.52vw 3.9vw 0.001vw #2936421a;
+  }
+
+  .modal__text {
+    width: 47vw;
+    margin: 0;
+    font-size: 3.26vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.17vw;
+    text-align: center;
+  }
+
+  .modal__recomendation {
+    margin: 0;
+    font-size: 2.08vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.12vw;
+    text-align: center;
+    color: $dark;
+  }
+
+  .modal__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 72.4vw;
+  }
+
+  .modal__tel {
+    width: 35.16vw;
+    height: 6.5vw;
+    border: 0.13vw solid #2c2e3f4d;
+    font-size: 1.82vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.5vw;
+    text-align: center;
+  }
+
+  .modal__email {
+    width: 35.16vw;
+    height: 6.5vw;
+    padding-left: 1.95vw;
+    border: 0.13vw solid #2c2e3f4d;
+    font-size: 1.82vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.5vw;
+    text-align: left;
+  }
+
+  .modal__button {
+    width: 32.55vw;
+    height: 6.5vw;
+    background-color: $pink;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 6.5vw;
+    letter-spacing: 0.26vw;
+    text-align: center;
+    color: $white;
+    border: none;
+  }
+}

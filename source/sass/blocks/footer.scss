@@ -105,3 +105,112 @@
     text-align: left;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 26.69vw;
+    justify-content: space-between;
+    margin-top: 10.42vw;
+  }
+
+  .footer__trip {
+    width: 54.16vw;
+    height: 23.02vw;
+    margin: 0;
+    border-right: 0.13vw solid #d7d9df;
+  }
+
+  .footer__next-title {
+    margin: 0;
+    font-size: 2.34vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.17vw;
+    text-align: left;
+  }
+
+  .footer__towns {
+    display: grid;
+    grid-template-columns: 12.36vw 12.36vw 12.36vw;
+    grid-template-rows: 3.21vw 3.21vw 3.21vw 3.21vw 3.21vw;
+    margin-top: 2.6vw;
+    font-size: 1.82vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.21vw;
+    text-align: left;
+  }
+
+  .footer__contact {
+    width: 40.8vw;
+    height: 23.02vw;
+    margin: 0;
+    border: none;
+  }
+
+  .footer__contact-title {
+    margin: 0;
+    font-size: 2.34vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.17vw;
+    text-align: left;
+  }
+
+  .footer__corporation {
+    width: 100vw;
+    height: 27.21vw;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer__corporation-title {
+    width: 100vw;
+    margin: 0;
+    font-size: 2.34vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.7vw;
+    text-align: center;
+  }
+
+  .footer__mail-wrap {
+    margin-top: 3.5vw;
+    margin-left: 11.85vw;
+  }
+
+  .footer__mail {
+    font-size: 1.82vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.21vw;
+    text-align: left;
+    color: $pink;
+  }
+
+  .footer__tel-wrap {
+    margin-top: 3.5vw;
+    margin-left: 11.85vw;
+  }
+
+  .footer__tel {
+    margin-top: 3.26vw;
+    font-size: 2.08vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.26vw;
+    text-align: left;
+    color: $pink;
+  }
+
+  .footer__corporation-text {
+    font-size: 1.82vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.13vw;
+    text-align: center;
+  }
+}

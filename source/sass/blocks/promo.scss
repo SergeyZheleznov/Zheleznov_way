@@ -3,7 +3,6 @@
     display: block;
     width: 1920px;
     height: 860px;
-    outline: 1px solid green;
   }
 
   .promo__index1 {
@@ -27,7 +26,6 @@
 
   .promo__number-zero {
     margin-bottom: 30px;
-    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 55px;
@@ -40,7 +38,6 @@
 
   .promo__number-one {
     margin-bottom: 39px;
-    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -56,7 +53,6 @@
     height: 75px;
     background-color: $pink;
     padding-left: 40px;
-    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 12px;
@@ -71,24 +67,130 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .promo {
-    display: block;
-    box-sizing: border-box;
     width: auto;
-    height: 44.79%;
-    outline: 1px solid green;
+    height: 44.79vw;
   }
 
   .promo__index1 {
     margin: 0;
     padding: 0;
-    padding-top: 5.21%;
     width: auto;
-    height: 44.79%;
+    height: 44.79vw;
 
     background-color: $white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../img/promo.png");
+  }
+
+  .promo__wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .promo__number-zero {
+    width: 51.8vw;
+    margin-bottom: 2.08vw;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.91vw;
+    line-height: 5.86vw;
+    text-align: left;
+    color: $white;
+    fill: solid;
+  }
+
+  .promo__number-one {
+    width: 51.8vw;
+    margin-bottom: 2.08vw;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.08vw;
+    line-height: 3.52vw;
+    text-align: left;
+    letter-spacing: -0.47px;
+    color: $white;
+    fill: solid;
+  }
+
+  .promo__search {
+    width: 32.55vw;
+    height: 6.51vw;
+    background-color: $pink;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3vw;
+    line-height: 1.55vw;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 0.26vw;
+    color: $white;
+    fill: solid;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .promo {
+    display: block;
+    width: auto;
+    height: 135vw;
+  }
+
+  .promo__index1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 43.83vw;
+
+    background-color: $white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/promo.png");
+  }
+
+  .promo__wrap {
+    position: absolute;
+    top: 73.43vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .promo__number-zero {
+    position: absolute;
+    top: -75vw;
+    width: 52.85vw;
+    height: 13.34vw;
+    margin-top: 15.11vw;
+    margin-bottom: 6.25vw;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4.47vw;
+    line-height: 6.67vw;
+    text-align: center;
+    color: $white;
+    fill: solid;
+  }
+
+  .promo__number-one {
+    width: 51.8vw;
+    margin-bottom: 2.08vw;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.08vw;
+    line-height: 3.52vw;
+    text-align: left;
+    letter-spacing: -0.47px;
+    color: $white;
+    fill: solid;
   }
 }

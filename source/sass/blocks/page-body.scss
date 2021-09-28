@@ -18,7 +18,17 @@
   .page-body {
     width: auto;
     margin: 0 auto;
+    margin-left: 100px;
+    margin-right: 216px;
     padding: 0;
+    background-color: $white;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-body {
+    margin-left: 100px;
+    margin-right: 216px;
     background-color: $white;
   }
 }
