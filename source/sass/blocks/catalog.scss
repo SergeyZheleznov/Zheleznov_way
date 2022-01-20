@@ -1,4 +1,90 @@
-@media (min-width: $desktop-width) {
+.catalog__header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.catalog__text1 {
+  width: 288px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+  color: $type-dark;
+  fill: solid;
+}
+
+.catalog__text2 {
+  width: 288px;
+  height: 84px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+  color: rgba(44, 46, 63, 0.7);
+  fill: solid;
+}
+
+.catalog__list {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 288px;
+  height: 425px;
+  margin-bottom: 35px;
+  background-repeat: no-repeat;
+}
+
+.greece {
+  background-image: url("../img/greece2.png");
+}
+
+.albany {
+  background-image: url("../img/albany.png");
+}
+
+.macedonia {
+  background-image: url("../img/macedonia.png");
+}
+
+.montenegro {
+  background-image: url("../img/montenegro.png");
+}
+
+.croatia {
+  background-image: url("../img/croatia.png");
+}
+
+.catalog__item-state {
+  width: 215px;
+  height: 61px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 61px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/*@media (min-width: $desktop-width) {
   .catalog__wrap-text {
     padding-top: 200px;
   }
@@ -316,32 +402,8 @@
     padding-top: 10.42vw;
   }
 
-  .catalog__text1 {
-    width: 39.19vw;
-    height: 5.86vw;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 2.6vw;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 3.91vw;
-    text-align: center;
-    color: $type-dark;
-    fill: solid;
-  }
 
-  .catalog__text2 {
-    width: 44.66vw;
-    height: 7.29vw;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 4vw;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.08vw;
-    text-align: center;
-    letter-spacing: -0.06vw;
-    color: rgba(44, 46, 63, 0.7);
-    fill: solid;
-  }
+
+
 }
+*/
