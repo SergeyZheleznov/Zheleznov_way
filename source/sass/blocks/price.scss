@@ -1,3 +1,136 @@
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.price__special {
+  top: 330vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 288px;
+  outline: 1px solid red;
+}
+
+.price__special-title {
+  width: 288px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+}
+
+.price__special-text {
+  width: 288px;
+  height: 215px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: $type-dark-70;
+}
+
+.price__invitation {
+  width: 288px;
+  height: 36ox;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+  color: $dark;
+}
+
+.price__tel {
+  width: 288px;
+  height: 32px;
+  margin: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: $pink;
+  text-decoration: $pink;
+}
+
+.price__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 288px;
+  height: 629px;
+  border: 3px solid rgba(44, 46, 63, 0.3);
+  border-radius: 6px;
+}
+
+.price__card-pick {
+  margin-right: 30px;
+  border: 3px solid $pink;
+}
+
+.price__title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 248px;
+}
+
+.price__name {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: left;
+  color: $pink;
+}
+
+.price__digit {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  color: $pink;
+}
+
+.price__instruction {
+  width: 248px;
+  height: 71px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #2c2e3f;
+}
+
+.price__features-list {
+  list-style: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+
+.price__button {
+  width: 288px;
+  height: 50px;
+}
+
 /*@media (min-width: $desktop-width) {
   .price {
     display: flex;
@@ -7,47 +140,6 @@
     margin-bottom: 140px;
   }
 
-  .price__card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 370px;
-    height: 672px;
-    padding: 40px 30px 30px;
-    border: 3px solid rgba(44, 46, 63, 0.3);
-    border-radius: 6px;
-  }
-
-  .price__card-pick {
-    margin-right: 30px;
-    border: 3px solid $pink;
-  }
-
-  .price__title {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 310px;
-  }
-
-  .price__name {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 34px;
-    text-align: left;
-    color: $pink;
-  }
-
-  .price__digit {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 34px;
-    text-align: left;
-    color: $pink;
-  }
 
   .price__special {
     display: flex;
@@ -133,73 +225,7 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .price {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-top: 57.86vw;
-    margin-bottom: 10.42vw;
-  }
 
-  .price__special {
-    position: absolute;
-    top: 330vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    width: 99.9vw;
-    padding-top: 14.45vw;
-    padding-left: 2.73vw;
-    padding-right: 2.73vw;
-  }
-
-  .price__special-title {
-    width: 20.57vw;
-    font-size: 3.9vw;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 5.85vw;
-    text-align: center;
-  }
-
-  .price__special-text {
-    width: 94.53vw;
-    height: 10.94vw;
-    font-size: 2.08vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3.52vw;
-    text-align: center;
-    color: $type-dark-70;
-  }
-
-  .price__invitation {
-    width: 22.79vw;
-    height: 4.43vw;
-    font-size: 2.34vw;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 4.43vw;
-    text-align: center;
-    color: $dark;
-  }
-
-  .price__tel {
-    width: 25.26vw;
-    height: 4.17vw;
-    margin: 0;
-    margin-bottom: 5.2vw;
-    font-size: 2.34vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: center;
-    color: $pink;
-    text-decoration: $pink;
-  }
 
   .price__card {
     position: relative;
@@ -256,43 +282,6 @@
     color: $pink;
   }
 
-  .price__instruction {
-    width: 32.3vw;
-    height: 9.24vw;
-    margin: 0;
-    padding: 0;
-    font-size: 2.08vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3.12vw;
-    text-align: left;
-    color: #2c2e3f;
-  }
 
-  .price__features-list {
-    list-style: none;
-    font-size: 2.08vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 4.16vw;
-    text-align: left;
-  }
-
-  .price__button {
-    position: absolute;
-    top: 74.8vw;
-    left: -0.1vw;
-    width: 37.2vw;
-    height: 6.52vw;
-    background-color: $pink;
-    font-size: 1.56vw;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 15px;
-    letter-spacing: 0.26vw;
-    text-align: center;
-    color: $white;
-    border: none;
-  }
 }
 */

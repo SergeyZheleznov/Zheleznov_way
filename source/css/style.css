@@ -692,7 +692,8 @@ body {
   line-height: 50px;
   letter-spacing: 2px;
   background-color: #fe7865;
-  color: #ffffff; }
+  color: #ffffff;
+  border: none; }
 
 .catalog__header {
   display: flex;
@@ -1155,7 +1156,7 @@ body {
 
 .details__feedback {
   position: absolute;
-  top: 650px;
+  top: 600px;
   left: 24px;
   display: flex;
   flex-direction: column;
@@ -1463,5 +1464,322 @@ body {
 }
 
 */
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.price__special {
+  top: 330vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 288px;
+  outline: 1px solid red; }
+
+.price__special-title {
+  width: 288px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center; }
+
+.price__special-text {
+  width: 288px;
+  height: 215px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  color: rgba(44, 46, 63, 0.7); }
+
+.price__invitation {
+  width: 288px;
+  height: 36ox;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+  color: #141517; }
+
+.price__tel {
+  width: 288px;
+  height: 32px;
+  margin: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #fe7865;
+  -webkit-text-decoration: #fe7865;
+          text-decoration: #fe7865; }
+
+.price__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 288px;
+  height: 629px;
+  border: 3px solid rgba(44, 46, 63, 0.3);
+  border-radius: 6px; }
+
+.price__card-pick {
+  margin-right: 30px;
+  border: 3px solid #fe7865; }
+
+.price__title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 248px; }
+
+.price__name {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: left;
+  color: #fe7865; }
+
+.price__digit {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  color: #fe7865; }
+
+.price__instruction {
+  width: 248px;
+  height: 71px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #2c2e3f; }
+
+.price__features-list {
+  list-style: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center; }
+
+.price__button {
+  width: 288px;
+  height: 50px; }
+
+/*@media (min-width: $desktop-width) {
+  .price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 233px;
+    margin-bottom: 140px;
+  }
+
+
+  .price__special {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 370px;
+    height: 672px;
+    margin-left: 30px;
+    padding: 120px 30px 30px;
+  }
+
+  .price__instruction {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #2c2e3f;
+  }
+
+  .price__features-list {
+    list-style: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .price__button {
+    width: 310px;
+    height: 75px;
+    background-color: $pink;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $white;
+    border: none;
+  }
+
+  .price__special-title {
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+    text-align: left;
+  }
+
+  .price__special-text {
+    width: 306px;
+    height: 190px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: $type-dark-70;
+  }
+
+  .price__invitation {
+    padding-left: 50px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: left;
+    color: $dark;
+  }
+
+  .price__tel {
+    margin: 0;
+    padding-left: 50px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: $black;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+
+
+  .price__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 37.5vw;
+    height: 81.9vw;
+    margin-left: 9.24vw;
+    padding: 3.9vw 2.6vw 2.6vw;
+    border: 0.38vw solid rgba(44, 46, 63, 0.3);
+    border-radius: 0.39vw;
+  }
+
+  .price__card-pick {
+    margin-right: 1vw;
+    border: 0.38vw solid $pink;
+  }
+
+  .price__title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 32.4vw;
+  }
+
+  .price__name {
+    width: 32.3vw;
+    height: 4.43vw;
+    margin: 0;
+    margin-bottom: 1.3vw;
+    padding: 0;
+    font-size: 3.12vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.43vw;
+    text-align: center;
+    color: $pink;
+  }
+
+  .price__digit {
+    width: 11.72vw;
+    height: 4.43vw;
+    margin: 0;
+    padding: 0;
+    font-size: 3.23vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.43vw;
+    text-align: center;
+    color: $pink;
+  }
+
+
+}
+*/
+.question {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f8f8f8; }
+
+.question__text {
+  width: 288px;
+  height: 64px;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center; }
+
+.question__recomendation {
+  width: 288px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center; }
+
+.question__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.question__tel {
+  width: 288px;
+  height: 50px;
+  margin-bottom: 20px; }
+
+.question__email {
+  width: 288px;
+  height: 50px;
+  margin-bottom: 20px; }
+
+.question__button {
+  width: 288px;
+  height: 50px; }
 
 /*# sourceMappingURL=style.css.map */
