@@ -84,326 +84,99 @@
   background-color: #ffffff;
 }
 
-/*@media (min-width: $desktop-width) {
-  .catalog__wrap-text {
-    padding-top: 200px;
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .catalog__text2 {
+    width: 343px;
+    height: 56px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 76px;
+  }
+
+  .greece {
+    margin-right: 40px;
+  }
+
+  .macedonia {
+    margin-right: 40px;
+  }
+
+  .croatia {
+    margin-left: 164px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1159px;
+    margin-left: 375px;
+    padding: 0;
+    outline: 1px solid red;
+  }
+
+  .catalog__header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: left;
+    width: 358px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid green;
   }
 
   .catalog__text1 {
     width: 358px;
     height: 160px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 64px;
-    font-weight: 600;
-    font-style: normal;
+    padding-bottom: 64px;
     font-size: 55px;
     line-height: 80px;
     text-align: left;
-    vertical-align: top;
-    letter-spacing: -1.25px;
-    color: $type-dark;
-    fill: solid;
   }
 
   .catalog__text2 {
-    width: 328px;
+    width: 358px;
     height: 56px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 30px;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 28px;
     text-align: left;
-    vertical-align: top;
-    letter-spacing: -0.47px;
-    color: rgba(44, 46, 63, 0.7);
-    fill: solid;
   }
 
   .catalog__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-  }
-
-  .catalog__item-greece {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 0;
-    margin-right: 60px;
-    padding: 0;
-    width: 350px;
-    height: 430px;
-
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/greece.png");
-  }
-
-  .catalog__item-state {
-    width: 215px;
-    height: 61px;
-    margin: 0;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 61px;
-    text-align: center;
-    letter-spacing: -0.47px;
-    color: $type-dark;
-    fill: solid;
-    background-color: $white;
-  }
-
-  .catalog__item-albany {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 0;
-    padding: 0;
-    margin-right: 60px;
-    width: 350px;
-    height: 430px;
-
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/albany.png");
-  }
-
-  .catalog__item-macedonia {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 0;
-    padding: 0;
-    width: 350px;
-    height: 430px;
-
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/macedonia.png");
-  }
-
-  .catalog__item-montenegro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 0;
-    padding: 0;
-    margin-top: 100px;
-    margin-left: 125px;
-    width: 350px;
-    height: 430px;
-
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/montenegro.png");
-  }
-
-  .catalog__item-croatia {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 0;
-    margin-top: 100px;
-    margin-left: 120px;
-    padding: 0;
-    width: 350px;
-    height: 430px;
-
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/croatia.png");
-  }
-}
-
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .catalog__wrap-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
-    padding-top: 10.42vw;
-  }
-
-  .catalog__text1 {
-    width: 39.19vw;
-    height: 5.86vw;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 2.6vw;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 3.91vw;
-    text-align: center;
-    color: $type-dark;
-    fill: solid;
-  }
-
-  .catalog__text2 {
-    width: 44.66vw;
-    height: 7.29vw;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 4vw;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.08vw;
-    text-align: center;
-    letter-spacing: -0.06vw;
-    color: rgba(44, 46, 63, 0.7);
-    fill: solid;
-  }
-
-  .catalog__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
     padding: 0;
   }
 
-  .catalog__item-greece {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    width: 37.5vw;
-    height: 55.34vw;
-    margin: 0;
-    margin-left: 9.9vw;
-    margin-right: 5.21vw;
-    padding: 0;
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
+  .catalog__item {
+    width: 350px;
+    height: 430px;
+    margin-bottom: 100px;
     background-repeat: no-repeat;
+  }
+
+  .greece {
     background-image: url("../img/greece.png");
+    margin-right: 54px;
+    margin-left: 0;
   }
 
-  .catalog__item-state {
-    width: 27vw;
-    height: 7.94vw;
-    margin: 0;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 3.12vw;
-    line-height: 7.94vw;
-    text-align: center;
-    letter-spacing: -0.05vw;
-    color: $type-dark;
-    fill: solid;
-    background-color: $white;
+  .albany {
+    margin-right: 54px;
   }
 
-  .catalog__item-albany {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    width: 37.5vw;
-    height: 55.34vw;
-    margin: 0;
-    padding: 0;
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/albany.png");
+  .macedonia {
+    margin-right: 0;
   }
 
-  .catalog__item-macedonia {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    width: 37.5vw;
-    height: 55.34vw;
-    margin: 0;
-    margin-left: 9.9vw;
-    margin-right: 5.21vw;
-    margin-top: 5.21vw;
-    padding: 0;
-
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/macedonia.png");
-  }
-
-  .catalog__item-montenegro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    width: 37.5vw;
-    height: 55.34vw;
-    margin: 0;
-    padding: 0;
-    margin-top: 5.21vw;
-
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/montenegro.png");
-  }
-
-  .catalog__item-croatia {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    width: 37.5vw;
-    height: 55.34vw;
-    margin: 0;
-    margin-top: 5.21vw;
-    margin-left: 31.25vw;
-    padding: 0;
-
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/croatia.png");
+ .montenegro {
+    margin-left: 160px;
+    margin-right: 140px;
   }
 }
-
-@media (max-width: $tablet-width) {
-  .catalog__wrap-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 10.42vw;
-  }
-
-
-
-
-}
-*/

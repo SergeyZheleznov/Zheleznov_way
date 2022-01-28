@@ -1,15 +1,26 @@
 .promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   margin-bottom: 80px;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .promo__header {
   width: 320px;
   height: 235px;
   margin: 0;
-  padding-top: 80px;
-  padding-left: 10px;
+  padding-top: 85px;
+  padding-left: 15px;
   background-image: url("../img/promo-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   outline: 1px solid red;
 }
 
@@ -30,12 +41,103 @@
   line-height: 27px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 14px;
+  margin-top: 19px;
 }
 
 .promo__search {
   width: 288px;
   height: 50px;
   margin: 0 auto;
-  margin-left: 18px;
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .promo__wrapper {
+    width: 768px;
+    height: 344px;
+    margin: 0;
+    padding-top: 80px;
+    background-image: url("../img/greece5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: 1px solid red;
+  }
+
+  .promo__header {
+    width: 398px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    background-image: none;
+  }
+
+  .promo__title {
+    width: 398px;
+    height: 45px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .promo__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 389px;
+    outline: 1px solid rgb(25, 0, 255);
+  }
+
+  .promo__number-one {
+    width: 389px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #ffffff;
+  }
+
+  .promo__search {
+    width: 250px;
+    height: 50px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    width: 1920px;
+    height: 860px;
+    padding-top: 80px;
+    margin-bottom: 178px;
+    background-image: url("../img/greece5.png");
+  }
+
+  .promo__header {
+    width: 398px;
+    margin: 0;
+    margin-top: 185px;
+    padding: 0;
+    background-image: none;
+  }
+
+  .promo__title {
+    width: 412px;
+    height: 159px;
+    margin: 0;
+    font-size: 55px;
+    line-height: 80px;
+    text-align: left;
+  }
+
+  .promo__number-one {
+    width: 376px;
+    height: 76px;
+    margin-bottom: 39px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .promo__search {
+    width: 340px;
+    height: 75px;
+    margin: 0;
+  }
 }

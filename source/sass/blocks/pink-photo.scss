@@ -1,24 +1,33 @@
-/*@media (min-width: $desktop-width) {
-  .pink-photo {
-    width: 844px;
-    height: 455px;
-    margin: 0;
-    padding: 0;
-
-    background-color: $white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../img/pink-photo.png");
-  }
+.pink-photo {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .pink-photo {
     position: relative;
-    width: 100vw;
-    height: 59.24vw;
+    width: 767px;
+    height: 455px;
     margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+
+    background-color: $white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/pink-photo.png");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pink-photo {
+    position: relative;
+    width: 844px;
+    height: 455px;
+    margin: 0;
+    margin-left: 375px;
     padding: 0;
 
     background-color: $white;
@@ -28,4 +37,3 @@
     background-image: url("../img/pink-photo.png");
   }
 }
-*/

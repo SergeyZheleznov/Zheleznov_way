@@ -1,5 +1,6 @@
 .page-body {
-  width: 100%;
+  position: relative;
+  width: 320px;
   margin: 0 auto;
   padding: 0;
   background-color: #ffffff;
@@ -9,7 +10,7 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-body {
     position: relative;
-    width: 100%;
+    width: 768px;
     margin: 0 auto;
     padding: 0;
     background-color: #ffffff;
@@ -19,6 +20,7 @@
 
 @media (min-width: $desktop-width) {
   .page-body {
-    width: 100%;
+    width: 1920px;
+    margin: 0 auto;
   }
 }

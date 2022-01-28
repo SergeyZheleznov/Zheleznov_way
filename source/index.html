@@ -27,19 +27,23 @@
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню
-      </span></button>
+        </span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item1"><a href="#">О путешествии
-            <svg class="site-list__item12" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"/>
+              <svg class="site-list__item12" width="8" height="12" viewBox="0 0 8 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z"
+                  fill="#2C2E3F" fill-opacity="0.5" />
               </svg>
             </a></li>
           <li class="site-list__item site-list__item2"><a href="#">Цены
-            <svg class="site-list__item21" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"/>
+              <svg class="site-list__item21" width="8" height="12" viewBox="0 0 8 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z"
+                  fill="#2C2E3F" fill-opacity="0.5" />
               </svg>
-          </a></li>
+            </a></li>
           <li class="site-list__item site-list__item3 site-list__item--strips site-list__item3--opened"><a
               href="catalog.html">+7(499)-784-684-46</a></li>
         </ul>
@@ -114,7 +118,11 @@
           <button class="details__button button">купить тур сейчас</button>
         </div>
         <div class="details__photo-wrap">
-          <img class="details__photo" src="img/greece1.png" width="320" height="415" alt="Фотография Греции">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="img/greece6.png">
+            <source media="(min-width: 768px)" srcset="img/greece4.png">
+            <img class="details__photo" src="img/greece1.png" width="320" height="415" alt="Фотография Греции">
+          </picture>
         </div>
       </div>
       <div class="details__feedback">
@@ -139,15 +147,15 @@
 
       <div class="price__card price__card-pick">
         <div class="price__title">
-          <p class="price__name">Комплексный</p>
-          <p class="price__digit">$1999</p>
+          <p class="price__name price__name-pink">Комплексный</p>
+          <p class="price__digit price__digit-pink">$1999</p>
         </div>
         <p class="price__instruction">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
         <ul class="price__features-list">
-          <li class="price__feastures-item">Разработанный маршрут с гидом группы</li>
-          <li class="price__feastures-item">Перелет, трансфер и проживание в отелях</li>
-          <li class="price__feastures-item">Завтраки, ужины в отелях и ланчи на природе</li>
-          <li class="price__feastures-item">Экскурсии по удивительно красивым местам Европы</li>
+          <li class="price__features-item">Разработанный маршрут с гидом группы</li>
+          <li class="price__features-item">Перелет, трансфер и проживание в отелях</li>
+          <li class="price__features-item">Завтраки, ужины в отелях и ланчи на природе</li>
+          <li class="price__features-item">Экскурсии по удивительно красивым местам Европы</li>
         </ul>
         <button class="price__button button">купить тур сейчас</button>
       </div>
@@ -159,11 +167,11 @@
         </div>
         <p class="price__instruction">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
         <ul class="price__features-list">
-          <li class="price__feastures-item">Разработанный маршрут с гидом группы</li>
-          <li class="price__feastures-item">Перелет и трансфер</li>
-          <li class="price__feastures-item">Проживание в хостелах при отелях</li>
-          <li class="price__feastures-item">Только завтраки в отелях</li>
-          <li class="price__feastures-item">Экскурсии по удивительно красивым местам Европы</li>
+          <li class="price__features-item">Разработанный маршрут с гидом группы</li>
+          <li class="price__features-item">Перелет и трансфер</li>
+          <li class="price__features-item">Проживание в хостелах при отелях</li>
+          <li class="price__features-item">Только завтраки в отелях</li>
+          <li class="price__features-item">Экскурсии по удивительно красивым местам Европы</li>
         </ul>
         <button class="price__button button">купить тур сейчас</button>
       </div>
@@ -172,43 +180,49 @@
 
     <section class="pink-photo">
       <h2 class="visually-hidden">Часть страницы с розовой фотографией</h2>
+
+      <form class="question" action="#" method="post">
+        <p class="question__text">У Вас остались вопросы?</p>
+        <p class="question__recomendation">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <ul class="question__list">
+          <li class="question__item">
+            <input class="question__tel" type="tel" id="tel" name="user_tel"
+              placeholder="* +7 Введите 10 цифр номера"></input>
+          </li>
+          <li class="question__item">
+            <input class="question__email" type="email" id="mail" name="user_mail" value="E-mail"></input>
+          </li>
+        </ul>
+        <button class="question__button button" type="submit">отправить</button>
+      </form>
     </section>
-
-    <form class="question" action="#" method="post">
-      <p class="question__text">У Вас остались вопросы?</p>
-      <p class="question__recomendation">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-      <ul class="question__list">
-        <li class="question__item">
-          <input class="question__tel" type="tel" id="tel" name="user_tel" placeholder="* +7 Введите 10 цифр номера"></input>
-        </li>
-        <li  class="question__item">
-          <input class="question__email" type="email" id="mail" name="user_mail"  value="E-mail"> </input>
-        </li>
-      </div>
-      <button class="question__button button" type="submit">отправить</button>
-    </form>
-
   </main>
 
   <footer class="footer">
     <div class="footer__trip">
       <p class="footer__next-title">Следующие путешествия</p>
       <div class="footer__towns">
-        <div class="footer__towns-item">Марсель</div>
-        <div class="footer__towns-item">Сардиния</div>
-        <div class="footer__towns-item">Корс</div>
-        <div class="footer__towns-item">Ним</div>
-        <div class="footer__towns-item">Палермо</div>
-        <div class="footer__towns-item">Ницца</div>
-        <div class="footer__towns-item">Монтелье</div>
-        <div class="footer__towns-item">Катания</div>
-        <div class="footer__towns-item">Монако</div>
-        <div class="footer__towns-item">Барселона</div>
-        <div class="footer__towns-item">Неаполь</div>
-        <div class="footer__towns-item">Динь-ле-Бен</div>
-        <div class="footer__towns-item">Пальма</div>
-        <div class="footer__towns-item">Рим</div>
-        <div class="footer__towns-item">Гренобль</div>
+        <ul class="footer__towns-list1">
+          <li class="footer__towns-item">Марсель</li>
+          <li class="footer__towns-item">Ним</li>
+          <li class="footer__towns-item">Монпелье</li>
+          <li class="footer__towns-item">Барселона</li>
+          <li class="footer__towns-item">Пальма</li>
+        </ul>
+        <ul class="footer__towns-list2">
+          <li class="footer__towns-item">Сардиния</li>
+          <li class="footer__towns-item">Палермо</li>
+          <li class="footer__towns-item">Катания</li>
+          <li class="footer__towns-item">Неаполь</li>
+          <li class="footer__towns-item">Рим</li>
+        </ul>
+        <ul class="footer__towns-list3">
+          <li class="footer__towns-item">Корс</li>
+          <li class="footer__towns-item">Ницца</li>
+          <li class="footer__towns-item">Монако</li>
+          <li class="footer__towns-item">Динь-ле-Бен</li>
+          <li class="footer__towns-item">Гренобль</li>
+        </ul>
       </div>
     </div>
     <div class="footer__contact">
@@ -228,15 +242,22 @@
     </div>
   </footer>
 
-  <div class="modal">
-    <p class="modal__text">У Вас остались вопросы?</p>
-    <p class="modal__recomendation">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-    <div class="modal__wrap">
-      <div class="modal__tel">+7 Введите 10 цифр номера</div>
-      <div class="modal__email">E-mail</div>
-    </div>
-    <button class="modal__button">отправить</button>
-  </div>
+  <form class="modal">
+    <h2 class="visually-hidden">Модальное окно</h2>
+    <button class="modal__toggle" type="button"><span class="visually-hidden">Открыть меню
+    </span></button>
+    <p class="modal__text">Купить тур</p>
+    <ul class="question__list">
+      <li class="question__item">
+        <input class="question__tel" type="tel" id="tel" name="user_tel"
+          placeholder="* +7 Введите 10 цифр номера"></input>
+      </li>
+      <li class="question__item">
+        <input class="question__email" type="email" id="mail" name="user_mail" value="E-mail"></input>
+      </li>
+    </ul>
+    <button class="modal__button button">отправить</button>
+  </form>
 
   <script src="js/jsmini.js"></script>
   <script>
@@ -247,23 +268,23 @@
 
     navMain.classList.remove('main-nav--nojs');
 
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-      headerLogo.classList.remove('page-header__logo--opened');
-      headerLogo.classList.add('page-header__logo--closed');
-      siteListTel.classList.remove('site-list__item3--opened');
-      siteListTel.classList.add('site-list__item3--closed');
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-      headerLogo.classList.add('page-header__logo--opened');
-      headerLogo.classList.remove('page-header__logo--closed');
-      siteListTel.classList.add('site-list__item3--opened');
-      siteListTel.classList.remove('site-list__item3--closed');
-    }
-  });
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+        headerLogo.classList.remove('page-header__logo--opened');
+        headerLogo.classList.add('page-header__logo--closed');
+        siteListTel.classList.remove('site-list__item3--opened');
+        siteListTel.classList.add('site-list__item3--closed');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+        headerLogo.classList.add('page-header__logo--opened');
+        headerLogo.classList.remove('page-header__logo--closed');
+        siteListTel.classList.add('site-list__item3--opened');
+        siteListTel.classList.remove('site-list__item3--closed');
+      }
+    });
   </script>
 </body>
 

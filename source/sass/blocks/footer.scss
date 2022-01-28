@@ -1,217 +1,218 @@
-/*@media (min-width: $desktop-width) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    height: 250px;
-    justify-content: space-between;
-    margin-top: 140px;
-  }
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .footer__trip {
-    width: 383px;
-    height: 189px;
-    margin: 0;
-    border-right: 1px solid #d7d9df;
-  }
+.footer__trip {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-  .footer__next-title {
-    margin: 0;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
-    text-align: left;
-  }
+.footer__next-title {
+  width: 288px;
+  height: 32px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
 
-  .footer__towns {
-    display: grid;
-    grid-template-columns: 132px 132px 132px;
-    grid-template-rows: 27px 27px 27px 27px 27px;
-    margin-top: 20px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: left;
-  }
+.footer__towns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
 
-  .footer__contact {
-    width: 397px;
-    height: 189px;
-    margin: 0;
-    padding-left: 65px;
-    border-right: 1px solid #d7d9df;
-  }
+.footer__towns ul {
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+}
 
-  .footer__contact-title {
-    margin: 0;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
-    text-align: left;
-  }
+.footer__towns-list1 {
+  width: 120px;
+  margin: 0;
+}
 
-  .footer__corporation {
-    width: 383px;
-    height: 189px;
-    margin: 0;
-    padding-left: 55px;
-  }
+.footer__towns-list2 {
+  width: 200px;
+  margin: 0;
+}
 
-  .footer__corporation-title {
-    margin: 0;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;
-    text-align: left;
-  }
+.footer__towns-list3 {
+  width: 280px;
+}
 
-  .footer__mail-wrap {
-    margin-top: 25px;
-    margin-left: 30px;
-  }
+.footer__towns-item {
+  margin-bottom: 10px;
+}
 
-  .footer__mail {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: left;
-    color: $pink;
-  }
+.footer__contact {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
 
-  .footer__tel-wrap {
-    margin-top: 25px;
-    margin-left: 30px;
-  }
+.footer__contact-title {
+  margin-bottom: 25px;
 
-  .footer__tel {
-    margin-top: 25px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    color: $pink;
-  }
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
 
-  .footer__corporation-text {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-  }
+.footer__mail-wrap {
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.footer__mail {
+  text-decoration: none;
+  font-size: 14px;
+  color: $pink;
+}
+
+.footer__tel {
+  margin-left: 30px;
+  font-size: 16px;
+  line-height: 32px;
+  color: $pink;
+}
+
+.footer__corporation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 320px;
+}
+
+.footer__corporation-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.footer__corporation-text {
+  width: 288px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .footer {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    height: 26.69vw;
-    justify-content: space-between;
-    margin-top: 10.42vw;
+    width: 768px;
+    outline: 1px solid red;
+    justify-content: flex-start;
   }
 
   .footer__trip {
-    width: 54.16vw;
-    height: 23.02vw;
-    margin: 0;
-    border-right: 0.13vw solid #d7d9df;
-  }
-
-  .footer__next-title {
-    margin: 0;
-    font-size: 2.34vw;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 4.17vw;
-    text-align: left;
-  }
-
-  .footer__towns {
-    display: grid;
-    grid-template-columns: 12.36vw 12.36vw 12.36vw;
-    grid-template-rows: 3.21vw 3.21vw 3.21vw 3.21vw 3.21vw;
-    margin-top: 2.6vw;
-    font-size: 1.82vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.21vw;
-    text-align: left;
+    width: 416px;
   }
 
   .footer__contact {
-    width: 40.8vw;
-    height: 23.02vw;
-    margin: 0;
-    border: none;
-  }
-
-  .footer__contact-title {
-    margin: 0;
-    font-size: 2.34vw;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 4.17vw;
-    text-align: left;
+    width: 350px;
   }
 
   .footer__corporation {
-    width: 100vw;
-    height: 27.21vw;
-    margin: 0;
-    text-align: center;
+    width: 767px;
   }
 
-  .footer__corporation-title {
-    width: 100vw;
-    margin: 0;
-    font-size: 2.34vw;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 4.7vw;
-    text-align: center;
+  .footer__towns {
+    align-items: flex-start;
+    outline: 1px solid red;
   }
 
-  .footer__mail-wrap {
-    margin-top: 3.5vw;
-    margin-left: 11.85vw;
-  }
-
-  .footer__mail {
-    font-size: 1.82vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.21vw;
+  .footer__towns-item {
+    width: 125px;
     text-align: left;
-    color: $pink;
+    outline: 1px solid blue;
   }
 
-  .footer__tel-wrap {
-    margin-top: 3.5vw;
-    margin-left: 11.85vw;
+  .footer__towns-list1,
+  .footer__towns-list2,
+  .footer__towns-list3 {
+    width: 125px;
+    padding: 0;
+    outline: 1px solid green;
+  }
+}
+/*
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 1024px;
+    justify-content: space-between;
+    margin-top: 140px;
+    padding-left: auto;
+    padding-right: auto;
+    outline: 1px solid red;
   }
 
-  .footer__tel {
-    margin-top: 3.26vw;
-    font-size: 2.08vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 4.26vw;
-    text-align: left;
-    color: $pink;
+  .footer__trip {
+    width: 340px;
   }
 
-  .footer__corporation-text {
-    font-size: 1.82vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3.13vw;
-    text-align: center;
+  .footer__contact {
+    width: 340px;
+  }
+
+  .footer__corporation {
+    width: 340px;
+  }
+
+  .footer__towns-list1,
+  .footer__towns-list2,
+  .footer__towns-list3 {
+    width: 110px;
+    padding: 0;
+    outline: 1px solid green;
   }
 }
 */
+@media (min-width: $desktop-width) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 1920px;
+    justify-content: space-between;
+    margin-top: 140px;
+    padding-left: 375px;
+    padding-right: 375px;
+    outline: 1px solid red;
+  }
+
+  .footer__trip {
+    width: 387px;
+  }
+
+  .footer__contact {
+    width: 390px;
+  }
+
+  .footer__corporation {
+    width: 390px;
+  }
+
+  .footer__towns-list1,
+  .footer__towns-list2,
+  .footer__towns-list3 {
+    width: 125px;
+    padding: 0;
+    outline: 1px solid green;
+  }
+}

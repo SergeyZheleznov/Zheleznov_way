@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  width: 78.1vw;
+  width: 50px;
   min-height: 51px;
 }
 
@@ -20,7 +20,6 @@
   color: #48484d;
   text-decoration: none;
   background-color: #f8f8f8;
-  outline: 1px solid red;
 }
 
 .main-nav__toggle {
@@ -141,7 +140,7 @@
     flex-direction: row;
     align-items: center;
     width: 500px;
-    margin-right: 19.5vw;
+    margin-right: 375px;
     outline: 1px solid blue;
   }
   .main-nav__list {
