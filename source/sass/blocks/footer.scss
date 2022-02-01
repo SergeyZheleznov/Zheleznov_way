@@ -121,14 +121,33 @@
 
   .footer__trip {
     width: 416px;
+    padding-top: 30px;
+    outline: 1px solid red;
+  }
+
+  .footer__next-title {
+    margin-left: 0;
+    margin-right: 90px;
+    text-align: left;
+    outline: 1px solid red;
   }
 
   .footer__contact {
     width: 350px;
+    align-items: flex-start;
+    padding-left: 50px;
+    margin-bottom: 0;
+  }
+
+  .footer__mail {
+    margin-right: 20px;
   }
 
   .footer__corporation {
     width: 767px;
+    margin-top: 0;
+    padding-top: 20px;
+    outline: 1px solid green;
   }
 
   .footer__towns {
@@ -146,44 +165,16 @@
   .footer__towns-list2,
   .footer__towns-list3 {
     width: 125px;
+    margin: 0;
     padding: 0;
     outline: 1px solid green;
   }
-}
-/*
-@media (min-width: 1024px) and (max-width: 1919px) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    width: 1024px;
-    justify-content: space-between;
-    margin-top: 140px;
-    padding-left: auto;
-    padding-right: auto;
-    outline: 1px solid red;
-  }
 
-  .footer__trip {
-    width: 340px;
-  }
-
-  .footer__contact {
-    width: 340px;
-  }
-
-  .footer__corporation {
-    width: 340px;
-  }
-
-  .footer__towns-list1,
-  .footer__towns-list2,
-  .footer__towns-list3 {
-    width: 110px;
-    padding: 0;
-    outline: 1px solid green;
+  .footer__corporation-text {
+    width: 726px;
   }
 }
-*/
+
 @media (min-width: $desktop-width) {
   .footer {
     display: flex;
@@ -198,21 +189,67 @@
 
   .footer__trip {
     width: 387px;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+
+  .footer__next-title {
+    text-align: left;
   }
 
   .footer__contact {
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 390px;
+    height: 251px;
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    padding-left: 65px;
+  }
+
+  .footer__contact-title {
+    width: 155px;
+    height: 32px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .footer__mail-wrap--envelope {
+    margin-left: 30px;
+    text-align: left;
   }
 
   .footer__corporation {
     width: 390px;
+    height: 251px;
   }
 
   .footer__towns-list1,
   .footer__towns-list2,
   .footer__towns-list3 {
     width: 125px;
+    height: 163px;
+    margin: 0;
     padding: 0;
     outline: 1px solid green;
+  }
+
+  .footer__towns-item {
+    text-align: left;
+  }
+
+  .footer__corporation-title {
+    margin-left: 20px;
+  }
+
+  .footer__corporation-text {
+    width: 320px;
+    height:  143px;
+    margin-left: 45px;
+    text-align: left;
   }
 }

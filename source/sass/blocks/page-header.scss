@@ -28,6 +28,7 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-header {
     width: 768px;
+    padding-left: 5px;
   }
 
   .page-header__logo {

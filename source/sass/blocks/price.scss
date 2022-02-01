@@ -127,6 +127,8 @@
 
 .price__digit-pink {
   color: $pink;
+  border-radius: 6px;
+  border: 3px;
 }
 
 .price__instruction {
@@ -173,15 +175,21 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .price {
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
   .price__special {
     width: 726px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .price__special-title {
     width: 158px;
     height: 45px;
+    margin-bottom: 5px;
     font-size: 30px;
     line-height: 45px;
   }
@@ -189,6 +197,7 @@
   .price__special-text {
     width: 726px;
     height: 84px;
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 27px;
   }
@@ -205,162 +214,135 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 140px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    margin-bottom: 100px;
     margin-left: 375px;
   }
 
   .price__card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 370px;
     height: 672px;
+    margin: 0;
+    margin-right: 65px;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+  }
+
+  .price__card-pick {
+    margin-right: 30px;
   }
 
   .price__special {
     order: 2;
     margin-left: 94px;
   }
-}
-/*
-  .price__special {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 370px;
-    height: 672px;
-    margin-left: 30px;
-    padding: 120px 30px 30px;
+
+  .price__title {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 310px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .price__name {
+    width: 220px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: left;
+  }
+
+  .price__digit {
+    width: 90px;
+    height: 34px;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: right;
   }
 
   .price__instruction {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
     text-align: left;
-    color: #2c2e3f;
+    width: 289px;
+    margin-bottom: 35px;
   }
 
   .price__features-list {
-    list-style: none;
+    margin-left: 30px;
+  }
+
+  .price__features-item {
+    width: 280px;
+    height: 55px;
+    margin-bottom: 15px;
+    padding: 0;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 32px;
-    text-align: left;
+  }
+
+  .price__features-item2,
+  .price__features-item4 {
+    height: 32px;
+  }
+
+  .price__features-list-pink {
+    margin-bottom: 65px;
   }
 
   .price__button {
     width: 310px;
     height: 75px;
-    background-color: $pink;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 2px;
-    text-align: center;
-    color: $white;
-    border: none;
+    line-height: 14.6px;
+  }
+
+  .price__special {
+    align-self: start;
+    outline: 1px solid green;
+    width: 370px;
+    height: 672px;
+    margin-left: 0;
+    padding-top: 110px;
+    padding-left: 0px;
   }
 
   .price__special-title {
+    width: 306px;
+    height: 79px;
     font-size: 55px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 90px;
     text-align: left;
+    margin-bottom: 45px;
   }
 
   .price__special-text {
     width: 306px;
-    height: 190px;
+    margin-bottom: 40px;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 27px;
     text-align: left;
-    color: $type-dark-70;
   }
 
   .price__invitation {
-    padding-left: 50px;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 34px;
-    text-align: left;
-    color: $dark;
   }
 
   .price__tel {
-    margin: 0;
-    padding-left: 50px;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    color: $black;
+    text-decoration: none;
+    color: #000000;
   }
 }
-
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-
-
-  .price__card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 37.5vw;
-    height: 81.9vw;
-    margin-left: 9.24vw;
-    padding: 3.9vw 2.6vw 2.6vw;
-    border: 0.38vw solid rgba(44, 46, 63, 0.3);
-    border-radius: 0.39vw;
-  }
-
-  .price__card-pick {
-    margin-right: 1vw;
-    border: 0.38vw solid $pink;
-  }
-
-  .price__title {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    width: 32.4vw;
-  }
-
-  .price__name {
-    width: 32.3vw;
-    height: 4.43vw;
-    margin: 0;
-    margin-bottom: 1.3vw;
-    padding: 0;
-    font-size: 3.12vw;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 4.43vw;
-    text-align: center;
-    color: $pink;
-  }
-
-  .price__digit {
-    width: 11.72vw;
-    height: 4.43vw;
-    margin: 0;
-    padding: 0;
-    font-size: 3.23vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 4.43vw;
-    text-align: center;
-    color: $pink;
-  }
-
-
-}
-*/
