@@ -80,34 +80,55 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   width: 268px;
   height: 431px;
+  padding-top: 20px;
   background-color: #ffffff;
 }
 
 .details__feedback-title {
+  height: 35px;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 20px;
   line-height: 24px;
+  border-bottom: 1px solid #fe7865;
 }
 
 .details__feedback-text {
   width: 228px;
   height: 221px;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 28px;
   text-align: center;
 }
 
+.detail__photo-vlada {
+  width: 45px;
+  height: 45px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.detail__photo-vlada img {
+  border-radius: 100%;
+}
+
 .details__feedback-customer {
-  margin-top: 50px;
+  margin-top: 3px;
   font-size: 16px;
   line-height: 20px;
   color: #2C2E3F;
 }
 
-
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .details {
+    margin-bottom: 80px;
+  }
+
   .details__list {
     width: 710px;
     margin-bottom: 45px;
@@ -168,15 +189,17 @@
   }
 
   .details__feedback {
-    top: 480px;
-    left: 190px;
+    top: 483px;
+    left: 193px;
     width: 382px;
     height: 367px;
+    padding-top: 30px;
     padding-left: 30px;
     align-items: flex-start;
   }
 
   .details__feedback-title {
+    height: 49px;
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 36px;
@@ -185,8 +208,7 @@
   .details__feedback-text {
     width: 322px;
     height: 164px;
-    margin-bottom: 0;
-
+    margin-bottom: 33px;
     text-align: left;
     font-size: 14px;
     line-height: 28px;
@@ -194,9 +216,20 @@
     outline: 1px solid red;
   }
 
+  .detail__photo-vlada-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
   .details__feedback-customer {
-    margin-left: 55px;
+    margin-top: 10px;
+    margin-left: 10px;
     outline: 1px solid red;
+  }
+
+  .detail__photo-vlada {
+    margin-left: 0;
   }
 }
 
@@ -296,7 +329,7 @@
   .details__feedback-title {
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 30px;
     line-height: 36.6px;
     letter-spacing: -0.69px;
@@ -305,7 +338,7 @@
   .details__feedback-text {
     width: 306px;
     height: 189px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 28px;
     letter-spacing: -0.41px;
@@ -315,9 +348,21 @@
   .details__feedback-customer {
     margin: 0;
     padding: 0;
-    margin-left: 55px;
+    margin-left: 15px;
+    margin-top: 15px;
     font-size: 16px;
     line-height: 19.5px;
     letter-spacing: -0.47px;
+  }
+
+  .detail__photo-vlada-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    outline: 1px solid red;
+  }
+
+  .detail__photo-vlada {
+    margin: 0;
   }
 }

@@ -42,13 +42,30 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 19px;
+  margin-bottom: 20px;
 }
 
 .promo__search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 288px;
   height: 50px;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 0;
+  outline: 1px solid rgb(255, 0, 21);
+}
+
+.promo__search-text {
+  width: 110px;
+  height: 12px;
+  margin-top: 18px;
+  font-size: 10px;
+  line-height: 12.2px;
+  letter-spacing: 2px;
+}
+
+.promo__search-arrow {
+  margin-left: 83px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -80,6 +97,7 @@
   }
 
   .promo__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,8 +118,10 @@
 
   .promo__search {
     width: 250px;
-    height: 50px;
-    margin: 0;
+  }
+
+  .promo__search-arrow {
+    margin-left: 45px;
   }
 }
 
@@ -157,5 +177,10 @@
     width: 340px;
     height: 75px;
     margin: 0;
+    padding-top: 16px;
+  }
+
+  .promo__search-arrow {
+    margin-left: 135px;
   }
 }

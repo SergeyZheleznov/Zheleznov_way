@@ -65,7 +65,15 @@
         <div class="promo__content">
           <p class="promo__number-one">В этом туре вы откроете для себя Европу в новом свете. Вас ждёт: море, горы, а
             также потрясающая красота природы.</p>
-          <button class="promo__search button">смотреть тур</button>
+          <button class="promo__search button">
+            <div class="promo__search-text">смотреть тур</div>
+            <div class="promo__search-arrow">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 1V15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 8L8 15L1 8" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            </button>
         </div>
 
       </div>
@@ -126,18 +134,23 @@
         </div>
       </div>
       <div class="details__feedback">
-        <p class="details__feedback-title">Отзывы</p>
+        <div class="details__feedback-title">Отзывы</div>
         <p class="details__feedback-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же
           высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто
           стоишь на краю света! </p>
-        <p class="details__feedback-customer">Влада Голицина</p>
+        <div class="detail__photo-vlada-wrapper">
+          <div class="detail__photo-vlada">
+            <img src="img/vlada.png" alt="Фотография Влады Голициной">
+          </div>
+          <p class="details__feedback-customer">Влада Голицина</p>
+        </div>
       </div>
     </section>
 
     <section class="price">
 
       <div class="price__special">
-        <div class="price__special-title">Цены</div>
+        <p class="price__special-title">Цены</p>
         <p class="price__special-text">Специально для Вас мы разработали 2 пакета цен с разными условиями,
           отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на
           все 100%! </p>

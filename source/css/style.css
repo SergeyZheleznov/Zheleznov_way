@@ -660,13 +660,28 @@ body {
   line-height: 27px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 19px; }
+  margin-top: 19px;
+  margin-bottom: 20px; }
 
 .promo__search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 288px;
   height: 50px;
-  margin: 0 auto;
-  margin-top: 20px; }
+  margin: 0;
+  outline: 1px solid #ff0015; }
+
+.promo__search-text {
+  width: 110px;
+  height: 12px;
+  margin-top: 18px;
+  font-size: 10px;
+  line-height: 12.2px;
+  letter-spacing: 2px; }
+
+.promo__search-arrow {
+  margin-left: 83px; }
 
 @media (min-width: 768px) and (max-width: 1920px) {
   .promo__wrapper {
@@ -691,6 +706,7 @@ body {
     font-size: 30px;
     line-height: 45px; }
   .promo__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -706,9 +722,9 @@ body {
     line-height: 27px;
     color: #ffffff; }
   .promo__search {
-    width: 250px;
-    height: 50px;
-    margin: 0; } }
+    width: 250px; }
+  .promo__search-arrow {
+    margin-left: 45px; } }
 
 @media (min-width: 1920px) {
   .promo {
@@ -749,7 +765,10 @@ body {
   .promo__search {
     width: 340px;
     height: 75px;
-    margin: 0; } }
+    margin: 0;
+    padding-top: 16px; }
+  .promo__search-arrow {
+    margin-left: 135px; } }
 
 .button {
   padding-left: 40px;
@@ -987,29 +1006,47 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   width: 268px;
   height: 431px;
+  padding-top: 20px;
   background-color: #ffffff; }
 
 .details__feedback-title {
+  height: 35px;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 20px;
-  line-height: 24px; }
+  line-height: 24px;
+  border-bottom: 1px solid #fe7865; }
 
 .details__feedback-text {
   width: 228px;
   height: 221px;
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 28px;
   text-align: center; }
 
+.detail__photo-vlada {
+  width: 45px;
+  height: 45px;
+  margin-left: 40px;
+  text-align: center; }
+
+.detail__photo-vlada img {
+  border-radius: 100%; }
+
 .details__feedback-customer {
-  margin-top: 50px;
+  margin-top: 3px;
   font-size: 16px;
   line-height: 20px;
   color: #2C2E3F; }
 
 @media (min-width: 768px) and (max-width: 1920px) {
+  .details {
+    margin-bottom: 80px; }
   .details__list {
     width: 710px;
     margin-bottom: 45px; }
@@ -1050,28 +1087,37 @@ body {
     width: 767px;
     height: 415px; }
   .details__feedback {
-    top: 480px;
-    left: 190px;
+    top: 483px;
+    left: 193px;
     width: 382px;
     height: 367px;
+    padding-top: 30px;
     padding-left: 30px;
     align-items: flex-start; }
   .details__feedback-title {
+    height: 49px;
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 36px; }
   .details__feedback-text {
     width: 322px;
     height: 164px;
-    margin-bottom: 0;
+    margin-bottom: 33px;
     text-align: left;
     font-size: 14px;
     line-height: 28px;
     letter-spacing: -0.41px;
     outline: 1px solid red; }
+  .detail__photo-vlada-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
   .details__feedback-customer {
-    margin-left: 55px;
-    outline: 1px solid red; } }
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: 1px solid red; }
+  .detail__photo-vlada {
+    margin-left: 0; } }
 
 @media (min-width: 1920px) {
   .details {
@@ -1141,14 +1187,14 @@ body {
   .details__feedback-title {
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 30px;
     line-height: 36.6px;
     letter-spacing: -0.69px; }
   .details__feedback-text {
     width: 306px;
     height: 189px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 28px;
     letter-spacing: -0.41px;
@@ -1156,10 +1202,18 @@ body {
   .details__feedback-customer {
     margin: 0;
     padding: 0;
-    margin-left: 55px;
+    margin-left: 15px;
+    margin-top: 15px;
     font-size: 16px;
     line-height: 19.5px;
-    letter-spacing: -0.47px; } }
+    letter-spacing: -0.47px; }
+  .detail__photo-vlada-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    outline: 1px solid red; }
+  .detail__photo-vlada {
+    margin: 0; } }
 
 .price {
   display: flex;
